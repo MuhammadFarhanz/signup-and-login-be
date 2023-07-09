@@ -13,7 +13,7 @@ app.use(cors())
 
 dotenv.config()
 
-const port = process.env.PORT
+const port = process.env.PORT || 8080
 
 app.get('/api', async (req, res) => {
   // res.send('Hello World!')
